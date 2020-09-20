@@ -6,67 +6,63 @@
     <title>Jaya's Personal Website</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="css/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="images\profilePic.png" alt="Jaya Profile Picture"></td>
-            <td>
-                <h1>Jaya Sinha</h1>
-                <p><em>Application Developer Senior Analyst at <strong><a href="https://www.accenture.com">Accenture</a></strong></em></p>
-                <p>I am a software developer graduated in information technology stream. I have been working in IT industry 
-                    for about 5 years. My skills include backend coding with Java.
-                </p>
-            </td>
-        </tr>
-    </table>
-
-    <hr>
-    <h3>Education</h3>
-    <ul>
-        <li>B.Tech at <a href="https://www.heritageit.edu/">Heritage Institute of Technology</a></li>
-        <li>Senior Secondary School - <a href="http://www.aspcspatna.ac.in/">Patna Central School</a></li>
-        <li>Secondary School - <a href="http://ksvmpatna.com/">Keshav Saraswati Vidya Mandir</a></li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Aug 2015 - Jan 2020</td>
-                <td>Power Programmer at Infosys Ltd</td>
-            </tr>
-            <tr>
-                <td>Feb 2020 - Present</td>
-                <td>Application Developer Senior Analyst at Accenture</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table>
-        <tr>
-            <td>Spring Boot</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Bootstrap</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Html</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-
-    </table>
-    <hr>
-    <a href="hobbies.html">Hobbies & Interests</a> <br>
-    <a href="contact.html">Contact Me</a>
+    <div class="top-container">
+            <img  class = "top-cloud" src="images/cloud.png" alt="cloud-img">
+            <h1>I'm Jaya</h1>
+            <h2>a programmer</h2>
+            <img class = "bottom-cloud"  src="images/cloud.png" alt="cloud-img">
+            <img src="images/mountain.png" alt="mountain-img">
+        
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/profilePic.png" alt="ProfilePic" class="profile-pic">
+          <h2>Application Developer</h2>
+          <p class="intro">I am a software engineer currently employed at Accenture, Pune. I am backend developer in Java technology. Previously I was working on Spring Microservice 
+            and now I have added Temenos UXP in my skillset.
+          </p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="paint-img" src="images/paint-palette.png" alt="Painting">
+            <h3>Painting</h3>
+            <p>Amateur Painter who loves to visualize her thoughts via colors.</p>
+          </div>
+          <div class="skill-row">
+            <img class="bake-img" src="images/bake.png" alt="Cooking">
+            <h3>Cooking</h3>
+            <p>Try new dishes especially baking.</p>
+          </div>
+          <div class="skill-row">
+            <img class="book-img" src="images/book.png" alt="Reading">
+            <h3>Reading Books</h3>
+            <p>Reading Books is the skill which I am most proud of.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you love reading books as much as I do</h3>
+          <p class="contact-msg">If you love reading books as much as I do, lets have a chat to discuss our favorite books
+            along with some Coding.
+          </p>
+          <a class="btn" href="mailto:jaya.sinha@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/jaya-sinha-3714538a/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/JayaSinha00">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p class="copyright"> © 2018 Jaya Sinha.</p>
+      </div>
+      
 </body>
 </html>
