@@ -24,6 +24,19 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5; 
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -62,12 +75,6 @@ h1 {
     padding: 5%;
 }
 
-h3 {
-    font-family: "Montserrat-Bold";
-    font-weight: 900;
-    font-size: 1.5rem;
-}
-
 .features-icon {
     margin-bottom: 1rem;
     color: #ef8172;
@@ -79,4 +86,44 @@ h3 {
 
 .features-description {
     color: #8f8f8f;
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonial-image {
+    width: 12%;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 15px 15px 30px;
+}
+
+/* Pricing */
+
+#pricing {
+    text-align: center;
+    padding: 100px;
+}
+
+.pricing-col {
+    padding: 3% 2%;
 }
