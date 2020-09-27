@@ -1,40 +1,34 @@
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-#title {
-    background-color: #ff4c68;
-    color: white;
+    text-align: center;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 7% 15%;
 }
 
-.title-image {
-    -ms-transform: rotate(25deg); /* IE 9 */
-    transform: rotate(25deg);
-    width: 60%;
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: bolder;
 }
 
-h1 {
+/* heading */
+
+.big-heading {
     font-family: 'Montserrat-Black', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-h2 {
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5; 
-    font-weight: bolder;
+/* Sections */
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
 }
 
-h3 {
-    font-family: "Montserrat-Bold";
-    font-weight: bolder;
-    font-size: 1.5rem;
+.white-section {
+    background-color: white;
 }
 
 /* Navigation Bar */
@@ -58,6 +52,21 @@ h3 {
     font-family: 'Montserrat-Light';
 }
 
+/* title */
+
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 15% 7%;
+}
+
+.title-image {
+    -ms-transform: rotate(25deg); /* IE 9 */
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    margin-right: 30%;
+}
+
 /* Download Buttons */
 
 .download-button {
@@ -67,11 +76,14 @@ h3 {
 /* Features */
 
 #features {
-    margin: 7% 15%;
+    position: relative;
+}
+
+.features-text {
+    font-size: 1.5rem;
 }
 
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -90,14 +102,13 @@ h3 {
 
 /* Testimonials */
 
-#testimonials {
-    text-align: center;
+.colored-section#testimonials {
     background-color: #ef8172;
-    color: #fff;
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5
 }
 
 .testimonial-image {
@@ -106,9 +117,8 @@ h3 {
     padding: 20px;
 }
 
-#press {
+.colored-section#press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -120,10 +130,35 @@ h3 {
 /* Pricing */
 
 #pricing {
-    text-align: center;
     padding: 100px;
+}
+
+.pricing-heading, .pricing-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-card-text {
+    font-size: 1.5rem;
 }
 
 .pricing-col {
     padding: 3% 2%;
+}
+
+/* Footer */
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+    #title{
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
 }
