@@ -5,13 +5,14 @@ for(var i=0;i<buttons.length;i++){
     buttons[i].addEventListener("click",function(){
         var buttonInnerHtml = this.innerHTML;
         makeSound(buttonInnerHtml);
+        buttonAnimation(buttonInnerHtml);
     });
 }
 
 // Keypres event
 document.addEventListener("keydown",function(event){
-    console.log(event.key);
     makeSound(event.key);
+    buttonAnimation(event.key);
 })
 
 function makeSound(key){
@@ -52,7 +53,13 @@ function makeSound(key){
             break;
 
         default:
-            console.log("no button pressed");
-            break;
+            console.log(key);
     }
+}
+
+function buttonAnimation(key) {
+    document.querySelector("."+key).classList.add("pressed");
+    setTimeout(() => {
+        document.querySelector("."+key).classList.remove("pressed");
+    }, 100);
 }
