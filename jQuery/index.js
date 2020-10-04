@@ -1,4 +1,13 @@
-$("h1").addClass("big-title");
-console.log($("a").attr("href")); //Gets the value of attribute
+//One way 
+$("button").click(function(){
+    $("h1").css("color","purple");
+})
 
-$("a").attr("href","https://www.yahoo.com") //sets the value of attribute
+$("input").keydown(function(event){
+   $("h1").text(event.key);
+})
+
+//Another way
+$("h1").on("mouseover",function(){
+    $("h1").css("color","red");
+});
